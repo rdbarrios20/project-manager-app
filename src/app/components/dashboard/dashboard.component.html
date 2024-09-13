@@ -24,11 +24,15 @@
                         <a class="nav-link" href="/project">Projects</a>
                     </li>
                 </ul>
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
-                </form>
+                <div style="margin-top: 5%;">
+                    <button class="btn btn-success" type="button" (click)="logout()">Log out</button>
+                </div>
             </div>
         </div>
     </div>
 </nav>
+<section>
+    <div class="image-container">
+        <img [src]="imageUrl" alt="">
+    </div>
+</section>
